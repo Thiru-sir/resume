@@ -204,22 +204,7 @@
     </div>
   </div>
 </div>
-<script>
-  function downloadResume() {
-      const resumeElement = document.querySelector('.resume').outerHTML;
-      
-      // Create a new PDF document
-      const pdf = new jsPDF();
-      
-      // Add the resume content to the PDF
-      pdf.html(resumeElement, {
-          callback: function(pdf) {
-              // Save the PDF
-              pdf.save('Swapna_CS_Resume.pdf');
-          }
-      });
-  }
-</script>
+
 
 </body>
 </html>
